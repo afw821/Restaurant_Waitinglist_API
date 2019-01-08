@@ -1,0 +1,24 @@
+{
+  "name": "restaurant_waitinglist_api",
+  "version": "1.0.0",
+  "description": "A restaurant application where the user can set a reservation",
+  "main": "server.js",
+  "scripts": {
+    "test": "Hello World",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afw821/Restaurant_Waitinglist_API.git"
+  },
+  "author": "Alex Watkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afw821/Restaurant_Waitinglist_API/issues"
+  },
+  "homepage": "https://github.com/afw821/Restaurant_Waitinglist_API#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
