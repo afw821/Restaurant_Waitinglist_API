@@ -2,9 +2,9 @@ const tableArray = [
     {
         customerName: "Alex Watkins",
         customerEmail: "afw821@gmail.com",
-        customerPhone: "770-777-7777",
-        customerId: "1234"
+        customerID: "1234",
+        phoneNumber: "123-123-4567"
     }
-]
+];
 
 module.exports = tableArray;

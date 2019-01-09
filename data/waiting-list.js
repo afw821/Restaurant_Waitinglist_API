@@ -1,3 +1,3 @@
-const waitingListArray = [];
+const waitingArray = [];
 
-module.exports = waitingListArray;
+module.exports = waitingArray;
