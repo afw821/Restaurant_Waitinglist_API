@@ -20,6 +20,7 @@ The dependencies are as follows:
  "express": "^4.16.4",
  
  "path": "^0.12.7"
+ 
 }
 
 If you use the above Heroku link there is no need to install these dependencies.
