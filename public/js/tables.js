@@ -39,15 +39,27 @@ $(function () {
    * GET all the waitlist data from the server.
    * Then call render to render the data.
    */
-    const getWaitList = function (){
+    const getWaitList = function () {
         $.ajax({
             method: 'GET',
             url: 'api/waitinglist'
-        }).then(function(data){
+        }).then(function (data) {
             console.log('wait data' + data);
             render(data, $('.waitlist'));
 
         });
+    }
+    //function to clear
+    const clearAll = function () {
+        $.ajax({
+            method: 'DELETE',
+            url: 'api/all'
+        }).then(function () {
+            $('.tables').empty();
+            $('.waitlist').empty();
+            getTables();
+            getWaitList();
+        })
     }
     getTables();
     getWaitList();

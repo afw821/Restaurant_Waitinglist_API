@@ -23,4 +23,36 @@ module.exports = function (app) {
         res.end();
     });
 
+    
+    //Clear the tableList. 
+   // Move up to five reservations to the tableList from the waitingList
+   
+//   app.delete('/api/all', function (req, res) {
+//     tableList = [];
+    
+//     const toMove = Math.min(5, waitingList.length);
+
+//     for (let i = 0; i < toMove; i++){
+//       tableList.push(waitingList[i]);
+//       waitingList.splice(i, 1); //remove element from waitingList
+//     }
+
+//     res.end();
+//   });
+
+app.delete('/api/all', function (req, res){
+    //set an empty tableList array
+    tableList = [];
+    //math.min returns the lowest value put into it
+    const toMove = Math.min(5, waitingList.length);
+    //A for loop to loop through to Move
+    //Push waiting list items to the table list
+    //splice the waitinglist array to remove element from it
+    for(let i = 0; i < toMove; i ++){
+        tableList.push(waitingList[i]);
+    }
+
+
+});
+
 }
